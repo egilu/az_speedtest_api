@@ -1,0 +1,11 @@
+# Build files
+**/obj
+**/bin
+
+# Development configuration
+**/appsettings.Development.json
+**/Properties
+SpeedTestApi/.vs/SpeedTestApi/v15/Server/sqlite3/storage.ide-shm
+SpeedTestApi/.vs/SpeedTestApi/v15/Server/sqlite3/db.lock
+SpeedTestApi/.vs/SpeedTestApi/v15/Server/sqlite3/storage.ide
+SpeedTestApi/.vs/SpeedTestApi/v15/Server/sqlite3/storage.ide-wal
