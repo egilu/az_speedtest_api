@@ -20,15 +20,15 @@ namespace SpeedTestApi.Controllers
 
         private readonly ISpeedTestEvents _eventHub;
 
-        public SpeedTestController(ISpeedTestEvents eventHub)
-        {
-            _eventHub = eventHub;
-        }
-
-        //public SpeedTestController()
+        //public SpeedTestController(ISpeedTestEvents eventHub)
         //{
-            
+        //    _eventHub = eventHub;
         //}
+
+        public SpeedTestController()
+        {
+
+        }
 
 
 
@@ -43,7 +43,7 @@ namespace SpeedTestApi.Controllers
         [HttpPost]
         public async Task<ActionResult<string>> UploadSpeedTest([FromBody] TestResult speedTest)
         {
-            await _eventHub.PublishSpeedTest(speedTest);
+            //await _eventHub.PublishSpeedTest(speedTest);
 
           
 
