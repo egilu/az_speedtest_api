@@ -25,6 +25,12 @@ namespace SpeedTestApi.Controllers
             _eventHub = eventHub;
         }
 
+        //public SpeedTestController()
+        //{
+            
+        //}
+
+
 
         // GET speedtest/ping
         [Route("ping")]
@@ -35,15 +41,22 @@ namespace SpeedTestApi.Controllers
         }
 
         [HttpPost]
-
         public async Task<ActionResult<string>> UploadSpeedTest([FromBody] TestResult speedTest)
         {
             await _eventHub.PublishSpeedTest(speedTest);
 
-            var speedTestData = $"Got a TestResult from { speedTest.User } with download { speedTest.Data.Speeds.Download } Mbps.";
+          
 
-            return Ok(speedTestData);
+            //Console.WriteLine("---------------------DATA---------------------");
+
+            return Ok(speedTest);
         }
+
+
+
+
+
+
 
         //public ActionResult<string> UploadSpeedTest([FromBody] TestResult speedTest)
         //{
