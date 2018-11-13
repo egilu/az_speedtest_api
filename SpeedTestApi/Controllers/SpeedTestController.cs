@@ -37,8 +37,13 @@ namespace SpeedTestApi.Controllers
         [HttpGet]
         public ActionResult<string> Ping()
         {
-            return Ok("PONG");
+
+	    //Console.WriteLine("PONG");
+            return Ok("PONG-Azure");
+
         }
+
+//public async Task<Actio
 
         [HttpPost]
         public async Task<ActionResult<string>> UploadSpeedTest([FromBody] TestResult speedTest)
