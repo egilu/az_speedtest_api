@@ -51,7 +51,7 @@ namespace SpeedTestApi.Controllers
             //await _eventHub.PublishSpeedTest(speedTest);
 
           
-            speedTest.User = "Kommer fra Azure";
+            speedTest.User = "Kommer fra Azure 2018";
             //Console.WriteLine("---------------------DATA---------------------");
 
             return Ok(speedTest);
