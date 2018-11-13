@@ -53,7 +53,7 @@ namespace SpeedTestApi
 
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
