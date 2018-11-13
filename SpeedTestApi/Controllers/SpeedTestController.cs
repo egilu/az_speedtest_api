@@ -39,7 +39,7 @@ namespace SpeedTestApi.Controllers
         {
 
 	    //Console.WriteLine("PONG");
-            return Ok("PONG-Azure");
+            return Ok("PONG-Azure2");
 
         }
 
