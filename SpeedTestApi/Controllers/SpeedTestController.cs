@@ -38,8 +38,8 @@ namespace SpeedTestApi.Controllers
         public ActionResult<string> Ping()
         {
 
-	    //Console.WriteLine("PONG");
-            return Ok("PONG-Azure2");
+	        Console.WriteLine("PONG");
+            return Ok("PONG-Azure72");
 
         }
 
@@ -52,7 +52,7 @@ namespace SpeedTestApi.Controllers
 
           
             speedTest.User = "Kommer fra Azure 2018";
-            //Console.WriteLine("---------------------DATA---------------------");
+            Console.WriteLine("---------------------DATA---------------------");
 
             return Ok(speedTest);
         }
