@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.Azure.EventHubs;
 using Newtonsoft.Json;
 using SpeedTestApi.Models;
-using SpeedTestApi.Models.SpeedTestApi.Models;
+//using SpeedTestApi.Models.SpeedTestApi.Models;
 
 namespace SpeedTestApi.Services
 {

@@ -5,8 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SpeedTestApi.Models
 {
-    namespace SpeedTestApi.Models
-    {
+
         public class TestResult
         {
             [Required]
@@ -105,6 +104,6 @@ namespace SpeedTestApi.Models
             [Required]
             public int Id { get; set; }
         }
-    }
+
 
 }

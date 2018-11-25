@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using SpeedTestApi.Models;
-using SpeedTestApi.Models.SpeedTestApi.Models;
 
 namespace SpeedTestApi.Services
 {

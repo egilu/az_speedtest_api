@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SpeedTestApi.Models;
-using SpeedTestApi.Models.SpeedTestApi.Models;
 using SpeedTestApi.Services;
 
 
@@ -48,16 +47,19 @@ namespace SpeedTestApi.Controllers
         [HttpPost]
         public async Task<ActionResult<string>> UploadSpeedTest([FromBody] TestResult speedTest)
         {
+
+       // public async Task<ActionResult<string>> UploadSpeedTest([FromBody] string speedTest)
+       // {
             //await _eventHub.PublishSpeedTest(speedTest);
 
           
             //speedTest.User = "Kommer fra Azure 2018";
-            Console.WriteLine("---------------------------");
-            Console.WriteLine(speedTest.User);
-            Console.WriteLine("---------------------------");
+          //  Console.WriteLine("---------------------------");
+          //  Console.WriteLine("ok");
+         //   Console.WriteLine("---------------------------");
 
             //var speedTestEx = $"Got a TestResult retur fra API-24/11/2018"; 
-
+            //speedTest = "jada";
             return Ok(speedTest);
         }
 
