@@ -19,15 +19,15 @@ namespace SpeedTestApi.Controllers
 
         private readonly ISpeedTestEvents _eventHub;
 
-        //public SpeedTestController(ISpeedTestEvents eventHub)
-        //{
-        //    _eventHub = eventHub;
-        //}
-
-        public SpeedTestController()
+        public SpeedTestController(ISpeedTestEvents eventHub)
         {
-
+            _eventHub = eventHub;
         }
+
+       // public SpeedTestController()
+        //{
+
+        //}
 
 
 
@@ -50,7 +50,7 @@ namespace SpeedTestApi.Controllers
 
        // public async Task<ActionResult<string>> UploadSpeedTest([FromBody] string speedTest)
        // {
-            //await _eventHub.PublishSpeedTest(speedTest);
+            await _eventHub.PublishSpeedTest(speedTest);
 
           
             //speedTest.User = "Kommer fra Azure 2018";
